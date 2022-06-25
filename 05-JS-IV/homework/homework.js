@@ -6,14 +6,14 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-  var  objeto  =  {
-    nombre : nombre ,
-    edad : edad ,
-    miau : función ( )  {
-      return '¡Miau!';
+  var obj = {
+    nombre: nombre,
+    edad: edad,
+    meow: function() {
+      return 'Meow!';
     }
-  } ;
-  return objeto ;
+  };
+  return obj;
 }
 
 function agregarPropiedad (objeto, property) {
@@ -46,7 +46,7 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto[propiedad];
+  delete objeto[property];
   return objeto;
 }
 
@@ -57,7 +57,7 @@ function nuevoUsuario (nombre, email, password) {
   var obj = {
     nombre: nombre,
     email: email,
-    password: contraseña
+    password: password
   };
   return obj;
 }
@@ -78,7 +78,7 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(objeto[propiedad]) {
+  if(objeto[property]) {
     return true;
   } else {
       return false;
