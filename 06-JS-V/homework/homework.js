@@ -14,7 +14,7 @@ function crearUsuario() {
     this.email = opciones.email;
     this.password = opciones.password;
   }
-
+  
   Usuario.prototype.saludar = function() {
     return 'Hola, mi nombre es ' + this.nombre;
   };
@@ -45,8 +45,6 @@ function agregarStringInvertida() {
     return stringInvertida;
   };
 }
-
-
 // ---------------------------------------------------------------------------//
   //Crea el constructor de la clase "Persona"
   //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
@@ -57,7 +55,6 @@ function agregarStringInvertida() {
     //   Edad: 22,
     //   Domicilio: 'Saavedra 123'
     //  }
-
     class Persona {
       constructor(nombre, apellido, edad, domicilio) {
         // Tu código:
@@ -75,7 +72,6 @@ function agregarStringInvertida() {
         }
       }
     }
-
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
